@@ -1,0 +1,36 @@
+/* .btnconreg{
+    width: 100%;
+    display: flex;
+    
+} */
+
+.submitreg-btn{
+    width: 100%;
+    
+}
+
+
+.divforreg-form{
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+    justify-content: center;
+    
+}
+
+.form-filebtn{
+ margin-bottom: 90px;
+}
+
+/* @media(max-width:(480)){
+.divforreg-form{
+    display: flex;
+    
+}
+
+.btncon{
+    width: 100%;
+    border-radius: 20px;
+}
+
+} */
