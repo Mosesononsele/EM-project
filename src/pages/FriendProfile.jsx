@@ -15,17 +15,21 @@ import likeplainIcon from '../assets/likesplainIcon.svg'
 import commentIcon from '../assets/commentIcon.svg'
 import forwardpostIcon from '../assets/forwardposticon.svg'
 import NavBar from '../layouts/NavBar'
+import '../styles/FriendProfile.css'
 
 
 
 const FriendProfile = () => {
   return (
-    <main className='container row bg-light'>
-
+    <main className=' container-desktop row d-flex justify-content-center bg-light  align-content-center'>
+      
       <NavBar/>
 
+      
+
+
     {/* section-1 */}
-    <section className='col-lg-4 bg-white h-50 shadow mt-3'> 
+    <section className=' section-1-fp col-lg-4 col bg-white h-50 shadow mt-3 d-flex d-none d-lg-block'> 
       <div className='d-flex gap-3'>
 <img src={friendprofilephotoIcon} alt="friend-profile-photo-icon" />
 <div className=' mt-4'>

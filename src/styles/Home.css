@@ -3,18 +3,35 @@
     .section-1-home{
     display: flex;
     display: none;
-    
-    }
-    
-    .section-2-home{
-        
     }
 
-    /* .main-home{
-        max-width: none;
-        padding: 0%;
-        margin: 0%;
-        box-sizing: border-box;
-    } */
+    .section-2-home{
+    width: 100vw;
+    } 
+
     
+
+    
+}
+
+.section-1-home{
+  position: sticky;
+    top: 1px;
+}
+
+.container-desktop{
+    
+}
+
+@media(min-width:575px){
+    
+    .container-desktop{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 25px;
+    } 
+
+    .main-home{
+        
+    }
 }

@@ -1,0 +1,16 @@
+@media(min-width:575px){
+    
+    .container-desktop{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 25px;
+    } 
+}
+
+.section-2-profile{
+    position: sticky;
+    top: 1px;
+    
+    
+    
+}

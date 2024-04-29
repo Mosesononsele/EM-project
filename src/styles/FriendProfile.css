@@ -1,0 +1,22 @@
+.section-1-fp{
+    position: sticky;
+    top: 1px;
+    
+  
+}
+
+/* .my-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    
+} */
+@media(min-width:575px){
+    
+    .container-desktop{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 25px;
+    } 
+}

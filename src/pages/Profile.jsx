@@ -16,17 +16,18 @@ import forwardpostIcon from '../assets/forwardposticon.svg'
 import likeplainIcon from '../assets/likesplainIcon.svg'
 import homeprofilephotoIcon from '../assets/homeprofilephotoImg.svg'
 import NavBar from '../layouts/NavBar'
+import '../styles/Profile.css'
 
 
 
 const Profile = () => {
   return (
-    <main className='container row bg-light'>
+    <main className=' container-desktop row justify-content-center bg-light'>
 
       <NavBar/>
 
     {/* section-1 */}
-    <section className='col-lg-4 bg-white h-50 shadow mt-3'> 
+    <section className='section-2-profile d-flex d-none d-lg-block col-lg-4 bg-white h-50 shadow mt-3'> 
       <div className='d-flex gap-3'>
 <img src={homeprofilephotoIcon} alt="profile-photo-icon" />
 <div className=' mt-4'>

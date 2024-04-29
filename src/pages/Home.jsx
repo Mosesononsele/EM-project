@@ -21,15 +21,19 @@ import forthfriendprofilephotoIcon from '../assets/fourthfrindprofilephotoIcon.s
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import NavBar from "../layouts/NavBar";
+import { Link } from "react-router-dom";
+
 
 
 const Home = () => {
   return (
-    <main className=" container main-home  bg-light row d-flex justify-content-center gap-4">
+    <main className=" container-desktop main-home  bg-light my-row row  containe d-fle justify-content-center  gap-4 ">
+
 
       <NavBar/>
+
       {/* section-1 */}
-      <section className="shadow  section-1-home col-lg-3 bg-white  h-50 ">
+      <section className="shadow  section-1-home col-lg-3 bg-white   h-50 ">
         <div className="  d-flex align-items-center gap-3">
           <img
             src={homeprofilephotoImg}
@@ -53,32 +57,32 @@ const Home = () => {
         <h5>Info</h5>
 
         <div className="d-flex gap-3 align-items-center ">
-          <img src={locationicon4profile} alt="location-icon" />
+          <img src={locationicon4profile} alt="location-icon" className="img-fluid" />
           <h5>Lagos, Nigeria</h5>
         </div>
 
         <div className="d-flex gap-3 align-items-center mb-4 mt-4">
-          <img src={realtorbagIcon4profile} alt="reatorbag-icon" />
+          <img src={realtorbagIcon4profile} alt="reatorbag-icon" className="img-fluid"/>
           <h5>Realtor</h5>
         </div>
         <hr />
         <div className="d-flex gap-3 align-items-center">
-          <img src={xicon4profile} alt="x-icon" />
+          <img src={xicon4profile} alt="x-icon" className="img-fluid"/>
           <h5>Twitter</h5>
         </div>
 
         <div className="d-flex gap-3 align-items-center">
-          <img src={linkdlnIcon4profile} alt="linkdln-icon" />
+          <img src={linkdlnIcon4profile} alt="linkdln-icon" className="img-fluid"/>
           <h5>Linkdln</h5>
         </div>
       </section>
 
       {/* section-2 */}
-      <section className=" section-2-home col-lg-6  d-flex justify-content-center   row gap-2 ">
+      <section className=" section-2-home col-lg-6   justify-conten-center align-content-center   gap-2 ">
         {/* first parent div for my post */}
         <div className="bg-white shadow rounded-2 pt-2 ">
           <div className="d-flex mb-4  gap-2 justify-content-center align-items-center  ">
-            <img src={homeprofilephotoImg} alt="profile-icon" />
+            <img src={homeprofilephotoImg} alt="profile-icon" className="img-fluid" />
             <Form.Control
               size="sm"
               type="text"
@@ -89,22 +93,27 @@ const Home = () => {
 
           <div className="d-flex justify-content-between mb-4 ">
             <div className="d-flex align-items-center gap-2">
-              <img src={galaryImg} alt="galary-img" />
+              <img src={galaryImg} alt="galary-img" className="img-fluid"/>
               <h6>Image</h6>
             </div>
+
+            <Link to={'../Post'}>
             <Button
               type="submit"
-              className="btn btn-primary rounded-5 w-25 border"
+              className="btn btn-primary rounded-5  border"
             >
               Post
             </Button>
+            </Link>
           </div>
         </div>
 
         {/* second parent  div (for first friend post) */}
         <div className="mt-3 rounded-2  bg-white shadow  ">
           <div className="d-flex gap-2 align-items-center justify-content-between">
-            <img src={friendprofilephotoIcon} alt="friend-profilephoto-icon" />
+            <Link to={'../FriendProfile'}>
+            <img src={friendprofilephotoIcon} alt="friend-profilephoto-icon" className="img-fluid" />
+            </Link>
             <div className="col pt-3 ">
               <h5>Yuji Itadori</h5>
               <p>8 mins ago</p>
@@ -126,10 +135,10 @@ const Home = () => {
 {/* div for likes, comments and forward icons */}
           <div className="d-flex justify-content-between mt-t">
             <div className="d-flex gap-3">
-              <img src={likesIcon} alt="likes-icon" />
-              <img src={commentIcon} alt="comment-icon" />
+              <img src={likesIcon} alt="likes-icon" className="img-fluid" />
+              <img src={commentIcon} alt="comment-icon" className="img-fluid" />
             </div>
-            <img src={forwardpostIcon} alt="iforward-post-icon" />
+            <img src={forwardpostIcon} alt="iforward-post-icon" className="img-fluid" />
           </div>
         </div>
 
@@ -138,7 +147,7 @@ const Home = () => {
           <div className="d-flex gap-2 align-items-center justify-content-between ">
             <img
               src={secondfriendprofilephotoIcon}
-              alt="second-friend-profile-photo"
+              alt="second-friend-profile-photo" className="img-fluid"
             />
             <div className="col pt-4">
               <h5>Naogami Shinya</h5>
@@ -172,7 +181,7 @@ const Home = () => {
         </div>
 
         {/* fourth parent div for (third friend post) */}
-        <div className="pt-5 bg-white shadow rounded-2">
+        <div className="pt-5 bg-white  shadow rounded-2">
           <div className="d-flex gap-2 align-items-center justify-content-between">
             <img
               src={thirdfriendprofilephotoIcon}
@@ -200,7 +209,7 @@ const Home = () => {
           />
 {/* div for likes, comments and forward icons */}
           <div className="d-flex justify-content-between pt-2">
-            <div className="d-flex gap-3">
+            <div className="d-flex  gap-3">
             <img src={likesplainIcon} alt="like-plain-icon" />
             <img src={commentIcon} alt="comment-icon" />
             </div>

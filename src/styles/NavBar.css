@@ -1,8 +1,32 @@
-/* .nav-main{
-    
-}
-@media(max-width:496){
+/* @media(max-width:496){
     .nav-main{
+    
+     bottom: 0%;   
+    }
+    .nav-main{
+        position: relative;
+        bottom: 0%;
         
     } 
+}
+.section-2-nav{
+    bottom: 0%;
 } */
+
+@media(max-width:480px){
+
+
+    .section-2-nav{
+        position: fixed;
+        bottom: 0;
+        background-color:white ;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .section-1-nav{
+        width: 100%;
+        
+       
+    }
+}

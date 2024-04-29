@@ -11,7 +11,7 @@ const ForgottenPsw = () => {
     <div className='row'>
 
 {/* div for img */}
-    <div className='col-lg-6 border p-5 bg-light'>
+    <div className='col-lg-6 border p-5 d-flex d-none d-lg-block align-content-center  bg-light'>
       <img src={generalauthImg} alt="generalauth-img" className='w-100 img-fluid '/>
     </div>
 {/* div for form */}

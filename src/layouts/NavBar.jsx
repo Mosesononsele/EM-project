@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import sitenamenavLogo from "../assets/sitenamenavLogo.svg";
 import homeLogo from "../assets/homeLogo.svg";
 import communityLogo from "../assets/communityLogo.svg";
 import meLogo from "../assets/meLogo.svg";
 import '../styles/NavBar.css'
+import AuthDropdown from "../components/AuthDropdown";
+import { IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown } from "react-icons/io";
+
+
 
 const NavBar = () => {
-  // const [authShow, setAuthShow] = useState(false)
+  const [authShow, setAuthshow] = useState(false);
   return (
-    <nav className=" nav-main d-flex justify-content-between align-items-center justify-content-around bg-white ">
-      <section className="d-flex  gap-2">
+    <nav className="nav-main d-flex justify-content-between align-items-center justify-content-around bg-white ">
+      <section className="d-flex  gap-2 section-1-nav">
         <div className="ps-">
           <img src={sitenamenavLogo} alt="sitenamenav-logo" />
         </div>
@@ -19,22 +24,46 @@ const NavBar = () => {
         </div>
       </section>
 
-      <section className="d-flex  gap-5 ">
-        <div className=" ">
+      <section className="d-flex  section-2-nav gap-5   ">
+    
+        <div className="  ">
           <img src={homeLogo} alt="home-logo" />
           <p>Home</p>
         </div>
 
-        <div>
+        <div >
           <img src={communityLogo} alt="community-logo" />
           <p>community</p>
         </div>
 
-        <div>
+          {/* onClick={!authShow ? setAuthShow (true) : setAuthShow(false)} */}
+        <div className="">
           <img src={meLogo} alt="me-logo" />
-          <p>Me</p>
+        {/* <div> {authShow && <AuthDropdown/>} </div> */}
+        <div className="position-relative d-flex " role="button" onClick={()=> !authShow ? setAuthshow(true) : setAuthshow(false)
+        }>
+         
+        <p >Me </p>
+
+        {!authShow ? (
+          <div>
+            <IoIosArrowUp />
+          </div>
+        ):(
+          <div><IoIosArrowDown /></div>
+        )}
+        <div className="position-absolute end-0">{authShow && <AuthDropdown />}</div>
+        
         </div>
+        
+
+                
+          
+
+        </div>
+        
       </section>
+
 
       
     </nav>

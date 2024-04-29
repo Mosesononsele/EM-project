@@ -3,6 +3,7 @@ import generalauthImg from "../assets/generalauthImg.png";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import sitenameLogo from "../assets/sitenameLogo.svg";
+import { Link } from "react-router-dom";
 
 const SignIn = () => {
   return (
@@ -38,8 +39,11 @@ const SignIn = () => {
               <Form.Group className="mb-3" controlId="formBasicCheckbox">
                 <Form.Check type="checkbox" label="Keep me signed in" />
               </Form.Group>
-              <p>Forgot password?</p>
+              <Link to={'../ForgottenPsw'}>
+              <p className="text-decoration-underline" role="button">Forgot password?</p>
+              </Link>
             </div>
+            <Link to={'../Home'}>
             <Button
               variant="primary"
               type="submit"
@@ -47,6 +51,8 @@ const SignIn = () => {
             >
               Sign In
             </Button>
+            </Link>
+            
             <p>
               By signing in you accept our Privacy Policy, Terms & Licensing
               Agreement. Protected by reCAPTCHA. Google Privacy

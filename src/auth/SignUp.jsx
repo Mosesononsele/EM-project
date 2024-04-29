@@ -6,20 +6,21 @@ import Form from "react-bootstrap/Form";
 // import Form from 'react-bootstrap/Form';
 // import InputGroup from 'react-bootstrap/InputGroup';
 import { GoPerson } from "react-icons/go";
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
   return (
-    <main className="container">
+    <main className="container  ">
       {/* main div */}
       <div className="row">
         {/* div for img */}
-        <div className="col-lg-6 p-5 bg-light border">
+        <div className=" d col-lg-6 p-5  bg-light border d-flex d-none d-lg-block ">
           <img src={generalauthImg} alt="" className="img-fluid w-100" />
         </div>
         {/* div for form */}
-        <div className="col-lg-6 bg-white d-flex row  align-content-center text-center border position-relative ">
+        <div className=" signup-div  col-lg-6 bg-white  align-content-center justify-content-center text-center border position-relative ">
 
-          <div>
+          <div className="">
           <img src={sitenameLogo} alt="sitename-logo" className="img-fluid " />
           <h2>Welcome to EM</h2>
           <p>Sign up for free</p>
@@ -46,6 +47,8 @@ const SignUp = () => {
             <Button variant="primary" type="submit" className="w-100">
               Sign Up
             </Button>
+
+            <p className="text-start ">Already have an account? <Link to={'../SignIn'}><span role="button" className="text-primary">Sign In</span> </Link> </p>
 
             <p>
               By signing up you accept our Privacy Policy, Terms & Licensing
