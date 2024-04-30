@@ -22,12 +22,15 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import NavBar from "../layouts/NavBar";
 import { Link } from "react-router-dom";
+import CommentModal from "../components/CommentModal";
+import BioModal from "../components/BioModal";
+// import '../components/TransitionBioMobile'
 
 
 
 const Home = () => {
   return (
-    <main className=" container-desktop main-home  bg-light my-row row  containe d-fle justify-content-center  gap-4 ">
+    <main className=" container-desktop main-home  bg-light my-row row  containe d-fle justify-content-center  gap-3 mb-5">
 
 
       <NavBar/>
@@ -38,8 +41,7 @@ const Home = () => {
           <img
             src={homeprofilephotoImg}
             alt="home-profilephoto-img"
-            className="img-fluid"
-          />
+            className="img-fluid"/>
           <div className="mt-4 ">
             <h4>John Doe</h4>
             <p>0 Friends</p>
@@ -82,7 +84,12 @@ const Home = () => {
         {/* first parent div for my post */}
         <div className="bg-white shadow rounded-2 pt-2 ">
           <div className="d-flex mb-4  gap-2 justify-content-center align-items-center  ">
-            <img src={homeprofilephotoImg} alt="profile-icon" className="img-fluid" />
+            <div className="">
+          <BioModal/>
+
+            </div>
+            {/* <img src={homeprofilephotoImg} alt="profile-icon" className="img-fluid" />
+             */}
             <Form.Control
               size="sm"
               type="text"
@@ -136,7 +143,8 @@ const Home = () => {
           <div className="d-flex justify-content-between mt-t">
             <div className="d-flex gap-3">
               <img src={likesIcon} alt="likes-icon" className="img-fluid" />
-              <img src={commentIcon} alt="comment-icon" className="img-fluid" />
+              <CommentModal/>
+              {/* <img src={commentIcon} alt="comment-icon" className="img-fluid" /> */}
             </div>
             <img src={forwardpostIcon} alt="iforward-post-icon" className="img-fluid" />
           </div>
@@ -174,7 +182,9 @@ const Home = () => {
           <div className="d-flex justify-content-between align-items-center">
             <div className="d-flex gap-3">
               <img src={likesplainIcon} alt="likes-icon" />
-              <img src={commentIcon} alt="comment-icon" />
+
+              <CommentModal/>
+              {/* <img src={commentIcon} alt="comment-icon" /> */}
             </div>
             <img src={forwardpostIcon} alt="forward-post-icon" />
           </div>
@@ -211,7 +221,8 @@ const Home = () => {
           <div className="d-flex justify-content-between pt-2">
             <div className="d-flex  gap-3">
             <img src={likesplainIcon} alt="like-plain-icon" />
-            <img src={commentIcon} alt="comment-icon" />
+            <CommentModal/>
+            {/* <img src={commentIcon} alt="comment-icon" /> */}
             </div>
               <img src={forwardpostIcon} alt="forward-post-icon" />
             
@@ -237,7 +248,8 @@ const Home = () => {
           <div className="d-flex justify-content-between  pt-3">
             <div className="d-flex gap-3">
             <img src={likesplainIcon} alt="likes-plain-icon" />
-            <img src={commentIcon} alt="comment-icon" />
+            <CommentModal/>
+            {/* <img src={commentIcon} alt="comment-icon" /> */}
             </div>
             <img src={forwardpostIcon} alt="forward-post-icon" />
 

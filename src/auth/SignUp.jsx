@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 const SignUp = () => {
   return (
-    <main className="container  ">
+    <main className="container">
       {/* main div */}
       <div className="row">
         {/* div for img */}

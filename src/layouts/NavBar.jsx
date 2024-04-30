@@ -7,6 +7,9 @@ import '../styles/NavBar.css'
 import AuthDropdown from "../components/AuthDropdown";
 import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
+import { Link } from "react-router-dom";
+// import homeprofilephotoImg from '../assets/homeprofilephotoImg.svg'
+// import TransitionBioMobile from "../components/TransitionBioMobile";
 
 
 
@@ -14,11 +17,13 @@ const NavBar = () => {
   const [authShow, setAuthshow] = useState(false);
   return (
     <nav className="nav-main d-flex justify-content-between align-items-center justify-content-around bg-white ">
-      <section className="d-flex  gap-2 section-1-nav">
-        <div className="ps-">
+      <section className="d-flex  gap-2 section-1-nav  ">
+        <div className="d-flex  d-md-block">
           <img src={sitenamenavLogo} alt="sitenamenav-logo" />
-        </div>
-
+      </div>
+          {/* <div className="d-flex d-none d-md-block">
+      <img src={homeprofilephotoImg} alt="" onClick={() => setOpen(!open)}/>
+          </div> */}
         <div className="pt-1">
           <input type="text" className="border-1 rounded"  placeholder="Search"/>
         </div>
@@ -37,10 +42,13 @@ const NavBar = () => {
         </div>
 
           {/* onClick={!authShow ? setAuthShow (true) : setAuthShow(false)} */}
+         
         <div className="">
+        <Link to={'../Profile'}>
           <img src={meLogo} alt="me-logo" />
+          </Link>
         {/* <div> {authShow && <AuthDropdown/>} </div> */}
-        <div className="position-relative d-flex " role="button" onClick={()=> !authShow ? setAuthshow(true) : setAuthshow(false)
+        <div className="position-relative d-flex  " role="button" onClick={()=> !authShow ? setAuthshow(true) : setAuthshow(false)
         }>
          
         <p >Me </p>

@@ -17,12 +17,15 @@ import likeplainIcon from '../assets/likesplainIcon.svg'
 import homeprofilephotoIcon from '../assets/homeprofilephotoImg.svg'
 import NavBar from '../layouts/NavBar'
 import '../styles/Profile.css'
+import CommentModal from '../components/CommentModal'
+import BioModal from '../components/BioModal'
+import ProfileBioModal from '../components/ProfileBioModal'
 
 
 
 const Profile = () => {
   return (
-    <main className=' container-desktop row justify-content-center bg-light'>
+    <main className=' container-desktop row justify-content-center bg-light gap-3 mb-5'>
 
       <NavBar/>
 
@@ -105,7 +108,8 @@ const Profile = () => {
 {/* parent div for first post */}
 <div className='shadow rounded-3'>
   <div className='d-flex align-items-center justify-content-between gap-3'>
-    <img src={homeprofilephotoIcon} alt="profile-photo-icon" />
+  <ProfileBioModal/>
+    {/* <img src={homeprofilephotoIcon} alt="profile-photo-icon" /> */}
     <div className='d-flex row col mt-4'>
     <h5>John Doe</h5>
     <p>8 mins ago</p>
@@ -118,8 +122,9 @@ const Profile = () => {
 {/* div for likes, comment and forward icons */}
   <div className='d-flex justify-content-between mt-3 pb-3'>
     <div className='d-flex gap-3'>
-    <img src={linkedlnIcon} alt="likes-plain-icon" />
-    <img src={commentIcon} alt="comment-icon" />
+    <img src={likeplainIcon} alt="likes-plain-icon" />
+    <CommentModal/>
+    {/* <img src={commentIcon} alt="comment-icon" /> */}
     </div>
     <img src={forwardpostIcon} alt="forward-post-icon" />
   </div>
@@ -142,7 +147,8 @@ const Profile = () => {
   <div className='d-flex justify-content-between mt-3 pb-3'>
     <div className='d-flex gap-3'>
     <img src={likeplainIcon} alt="likes-plain-icon" />
-    <img src={commentIcon} alt="comment-icon" />
+    <CommentModal/>
+    {/* <img src={commentIcon} alt="comment-icon" /> */}
     </div>
     <img src={forwardpostIcon} alt="forward-post-icon" />
   </div>
@@ -165,14 +171,15 @@ const Profile = () => {
   <div className='d-flex justify-content-between mt-3 pb-3'>
     <div className='d-flex gap-3'>
     <img src={likeplainIcon} alt="likes-plain-icon" />
-    <img src={commentIcon} alt="comment-icon" />
+    <CommentModal/>
+    {/* <img src={commentIcon} alt="comment-icon" /> */}
     </div>
     <img src={forwardpostIcon} alt="forward-post-icon" />
   </div>
 </div>
 
 {/* parent div for fourth post */}
-<div className='shadow'>
+<div className='shadow mb-4'>
   <div className='d-flex align-items-center justify-content-between gap-3'>
     <img src={homeprofilephotoIcon} alt="profile-photo-icon" />
     <div className='d-flex row col mt-4'>
@@ -188,7 +195,8 @@ const Profile = () => {
   <div className='d-flex justify-content-between mt-3 pb-3'>
     <div className='d-flex gap-3'>
     <img src={likeplainIcon} alt="likes-plain-icon" />
-    <img src={commentIcon} alt="comment-icon" />
+    <CommentModal/>
+    {/* <img src={commentIcon} alt="comment-icon" /> */}
     </div>
     <img src={forwardpostIcon} alt="forward-post-icon" />
   </div>

@@ -11,6 +11,9 @@ import FriendProfile from './pages/FriendProfile'
 import Profile from './pages/Profile'
 import Comment from './pages/Comment'
 import Post from './pages/Post'
+import BioModal from './components/BioModal'
+import ProfileBioModal from './components/ProfileBioModal'
+
 
 function App() {
   
@@ -30,6 +33,9 @@ function App() {
       <Route path='/Profile' element={<Profile/>}/>
       <Route path='/Comment' element={<Comment/> } />
       <Route path='/Post' element={<Post/>}/>
+      <Route path='/BioModal' element={<BioModal/>}/>
+      <Route path='/ProfileBioModal' element={<ProfileBioModal/>}/>
+      
 
 
     </Routes>

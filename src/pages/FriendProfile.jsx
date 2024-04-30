@@ -16,12 +16,13 @@ import commentIcon from '../assets/commentIcon.svg'
 import forwardpostIcon from '../assets/forwardposticon.svg'
 import NavBar from '../layouts/NavBar'
 import '../styles/FriendProfile.css'
+import CommentModal from '../components/CommentModal'
 
 
 
 const FriendProfile = () => {
   return (
-    <main className=' container-desktop row d-flex justify-content-center bg-light  align-content-center'>
+    <main className=' container-desktop row d-flex justify-content-center bg-light gap-3 align-content-center mb-5'>
       
       <NavBar/>
 
@@ -121,7 +122,8 @@ const FriendProfile = () => {
   <div className='d-flex justify-content-between mt-3 pb-3'>
     <div className='d-flex gap-3'>
     <img src={likeplainIcon} alt="likes-plain-icon" />
-    <img src={commentIcon} alt="comment-icon" />
+    <CommentModal/>
+    {/* <img src={commentIcon} alt="comment-icon" /> */}
     </div>
     <img src={forwardpostIcon} alt="forward-post-icon" />
   </div>
@@ -144,7 +146,8 @@ const FriendProfile = () => {
   <div className='d-flex justify-content-between mt-3 pb-3'>
     <div className='d-flex gap-3'>
     <img src={likeplainIcon} alt="likes-plain-icon" />
-    <img src={commentIcon} alt="comment-icon" />
+    <CommentModal/>
+    {/* <img src={commentIcon} alt="comment-icon" /> */}
     </div>
     <img src={forwardpostIcon} alt="forward-post-icon" />
   </div>
@@ -167,14 +170,15 @@ const FriendProfile = () => {
   <div className='d-flex justify-content-between mt-3 pb-3'>
     <div className='d-flex gap-3'>
     <img src={likeplainIcon} alt="likes-plain-icon" />
-    <img src={commentIcon} alt="comment-icon" />
+    <CommentModal/>
+    {/* <img src={commentIcon} alt="comment-icon" /> */}
     </div>
     <img src={forwardpostIcon} alt="forward-post-icon" />
   </div>
 </div>
 
 {/* parent div for fourth post */}
-<div className='shadow'>
+<div className='shadow mb-4'>
   <div className='d-flex align-items-center justify-content-between gap-3'>
     <img src={friendprofilephotoIcon} alt="friend-profile-photo-icon" />
     <div className='d-flex row col mt-4'>
@@ -190,7 +194,8 @@ const FriendProfile = () => {
   <div className='d-flex justify-content-between mt-3 pb-3'>
     <div className='d-flex gap-3'>
     <img src={likeplainIcon} alt="likes-plain-icon" />
-    <img src={commentIcon} alt="comment-icon" />
+    <CommentModal/>
+    {/* <img src={commentIcon} alt="comment-icon" /> */}
     </div>
     <img src={forwardpostIcon} alt="forward-post-icon" />
   </div>
