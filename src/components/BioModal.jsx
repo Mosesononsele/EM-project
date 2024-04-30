@@ -26,7 +26,7 @@ const BioModal = () => {
           <Modal.Title></Modal.Title>
         </Modal.Header>
         <Modal.Body> 
-            <section className="d-none d-md-block  ">
+            <section className="   ">
         <div className="  d-flex align-items-center gap-3">
           <img
             src={homeprofilephotoImg}

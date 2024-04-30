@@ -26,7 +26,7 @@ const ProfileBioModal = () => {
     <img src={homeprofilephotoImg} alt=""  onClick={handleShow} />
 </div>
 
-      <Modal size='lg' show={show} onHide={handleClose}>
+      <Modal size='' show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
